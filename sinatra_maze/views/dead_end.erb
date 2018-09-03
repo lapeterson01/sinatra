@@ -1,0 +1,12 @@
+<h3>You have reached a dead end at room <%= @room %></h3>
+<h3>You must go back!</h3>
+
+<h3>You have two options available: a left path and a right path.</h3>
+<h3>Which do you choose?</h3>
+
+<form action='/result' method='post'>
+    <input id="l" name="left" class="btn" type="submit" value="Left!">
+    <input id="r" name="right" class="btn" type="submit" value="Right!">
+</form>
+
+<a href="/">Start Over</a>
