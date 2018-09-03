@@ -7,7 +7,7 @@ get('/') do
     erb(:input)
 end
 
-get('/output') do
+post('/output') do
     @length = params.fetch("length")
     @width = params.fetch("width")
     rectangle = Rectangle.new(@length, @width)

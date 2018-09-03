@@ -7,7 +7,7 @@ get('/') do
     erb(:input)
 end
 
-get('/output') do
+post('/output') do
     @side_1 = params.fetch('side_1').to_i()
     @side_2 = params.fetch('side_2').to_i()
     @side_3 = params.fetch('side_3').to_i()
