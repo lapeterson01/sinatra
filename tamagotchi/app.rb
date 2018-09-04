@@ -31,6 +31,8 @@ get('/levels/:need') do
     erb(:needs)
 end
 
-post('/levels/:need') do
+post('/meet_need') do
+    my_pet = session[:pet]
+    my_pet.set_food_level(10)
     redirect('/')
 end
