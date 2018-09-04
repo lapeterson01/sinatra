@@ -17,7 +17,6 @@ post('/') do
 end
 
 get('/items/:id') do
-binding.pry
     @item = Item.find(params[:id])
     erb(:item)
 end

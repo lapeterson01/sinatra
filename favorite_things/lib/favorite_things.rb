@@ -3,7 +3,7 @@ require('pry')
 class Item
     @@list = []
     attr_reader :id
-    attr_accessor :name
+    attr_accessor :name :rank
     
     def initialize(name)
         @name = name
