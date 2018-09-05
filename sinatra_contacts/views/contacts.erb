@@ -1,0 +1,11 @@
+<h1>Contacts</h1>
+
+<hr />
+
+<% @list.each do |contact| %>
+    <h3><a href="/contact/update/<%= contact['first_name'] %>-<%= contact['last_name'] %>"><%= contact['first_name'] %> <%= contact['last_name'] %></a></h3>
+<% end %>
+
+<hr />
+
+<h3><a href="/contact/new">Create A New Contact</a></h3>

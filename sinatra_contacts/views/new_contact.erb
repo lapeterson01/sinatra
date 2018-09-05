@@ -1,0 +1,47 @@
+<h1>New Contact</h1>
+
+<hr />
+
+<form action="/contact/new" method="post">
+    <div class="form-group">
+        <label for="first_name">First Name:</label>
+        <input id="f" name="first_name" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="last_name">Last Name:</label>
+        <input id="l" name="last_name" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="job_title">Job Title:</label>
+        <input id="j" name="job_title" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="company">Company:</label>
+        <input id="c" name="company" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <input id="a" name="address" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="email_address">Email Address:</label>
+        <input id="e" name="email_address" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="phone_number">Phone Number:</label>
+        <input id="p" name="phone_number" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+        <label for="contact_type">Contact Type:</label>
+        <select id="c" name="contact_type" class="form-control">
+            <option value="">Select</option>
+            <option value="Professional">Professional</option>
+            <option value="Personal">Personal</option>
+        </select>
+    </div>
+    <button type="submit" class="btn">Submit</button>
+</form>
+
+<hr />
+
+<a href="/">Back to Home Page</a>
